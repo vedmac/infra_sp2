@@ -1,10 +1,11 @@
+docker-compose.yaml
+db.sqlite3
 .git/*
 env/
 venv/
 .venv/
 
 __pycache__/
-*.py[cod]
 
 .idea
 .DS_Store
@@ -15,9 +16,6 @@ __pycache__/
 
 *.sublime-project
 *.sublime-workspace
-
-
-db.sqlite3
 
 sent_emails
 sent_emails/
