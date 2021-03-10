@@ -21,6 +21,7 @@ docker-compose
 ### Installing
 
 Installing steps:
+
 Build and run:
 ```
 $ docker compose up
