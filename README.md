@@ -42,6 +42,10 @@ Create supruser:
 ```
 $ make createsuperuser
 ```
+Stop:
+```
+$ make stop
+```
 
 ## Admin access
 

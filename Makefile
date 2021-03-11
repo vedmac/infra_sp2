@@ -1,5 +1,5 @@
 start:
-	docker-compose up
+	docker-compose up -d
 
 collectstatic:
 	docker-compose exec web python manage.py collectstatic --noinput
@@ -13,3 +13,5 @@ filldb:
 createsuperuser:
 	docker-compose run web python manage.py createsuperuser
 
+stop:
+	docker-compose down
