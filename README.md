@@ -24,23 +24,23 @@ Installing steps:
 
 Build and run:
 ```
-$ docker compose up
+$ make start
 ```
 Collect static:
 ```
-$ docker-compose exec web python manage.py collectstatic --noinput
+$ make collectstatic
 ```
 Make migration:
 ```
-$ docker-compose exec web python manage.py migrate --noinput
+$ make migration
 ```
 Fill database from fixtures:
 ``` 
-$ docker-compose exec web python manage.py loaddata fixture.json
+$ make filldb
 ```
 Create supruser:
 ```
-$ docker-compose run web python manage.py createsuperuser
+$ make createsuperuser
 ```
 
 ## Admin access
