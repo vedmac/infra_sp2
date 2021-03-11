@@ -85,9 +85,9 @@ class TokenObtainView(GenericAPIView):
         send_mail(subject, message_email, from_email, to_email,
                   fail_silently=True)
         return Response(
-                data={'message': ' wrong or already used confirmation_code, '
-                                 'check your mail for a new confirmation_code'}, # noqa
-                status=status.HTTP_400_BAD_REQUEST)
+            data={'message': ' wrong or already used confirmation_code, '
+                  'check your mail for a new confirmation_code'},
+            status=status.HTTP_400_BAD_REQUEST)
 
 
 class ListCreateDeleteViewSet(mixins.ListModelMixin,
