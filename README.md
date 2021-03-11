@@ -11,12 +11,12 @@ git clone https://github.com/Bytlot/infra_sp2.git
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Requirements before start:
 
-```
-docker
-docker-compose
-```
+[Docker](https://docs.docker.com/get-docker/)
+
+[Docker-compose](https://docs.docker.com/compose/install/)
+
 
 ### Installing
 
@@ -34,7 +34,7 @@ Make migration:
 ```
 $ docker-compose exec web python manage.py migrate --noinput
 ```
-Load data from fixtures:
+Fill database from fixtures:
 ``` 
 $ docker-compose exec web python manage.py loaddata fixture.json
 ```
