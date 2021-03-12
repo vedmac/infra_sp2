@@ -1,5 +1,8 @@
 FROM python:3.8-alpine as builder
 
+# Систмные переменные (это скорее настройки питона) которые не 
+# планируют меняться лучше хранить здесь.
+# Так пишут в интернетах, если не правда могу перенести в .env
 # This prevents Python from writing out pyc files
 ENV PYTHONDONTWRITEBYTECODE 1
 # This keeps Python from buffering stdin/stdout
